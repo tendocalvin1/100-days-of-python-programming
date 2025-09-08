@@ -1,10 +1,10 @@
-Crystal clear, my guy ✅ — you want a **strict day-by-day timetable** (like a countdown), where each **day has a specific topic/task** until the very end (8th Sept → 22nd Dec 2025).
+My Refresher Course on Python programming as I embark on its diversity in fields like BackEnd Engineering, Data Science, Machine Learning and Artificial Intelligence (8th Sept → 22nd Dec 2025).
 
 Let’s build it:
 
 ---
 
-# 📅 **100 Days of Python (with Django) — Daily Breakdown**
+# 📅 **100 Days of Python — Daily Breakdown**
 
 **Duration:** 8 Sept 2025 → 22 Dec 2025
 **Commitment:** 2 hrs/day (except 1–11 Dec, light revision during exams)
