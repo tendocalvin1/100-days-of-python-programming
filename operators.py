@@ -31,3 +31,22 @@ a = [1, 2, 3]
 b = a
 c = [1, 2, 3]
 print(a is b, a is not c, a == c)
+
+# exercises
+number1 = int(input("Enter a number:"))
+number2 = int(input("Enter a number:"))
+
+print(f"The sum of these two numbers is:", number1 + number2)
+print(f"The difference between these two numbers is:", number1 - number2)
+print(f"The product of these two numbers is:", number1 * number2)
+print(f"Divsion:", number1 / number2)
+
+
+# number two
+# Write a program to check if a number is even and greater than 10.
+digit = int(input("Enter a digit please:"))
+if digit % 2 == 0 & digit >= 10:
+    print("The number is both even and above 10")
+    
+else:
+    print("The entered number doesnot meet the required requirements")
