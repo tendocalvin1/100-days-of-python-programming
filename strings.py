@@ -11,47 +11,67 @@
 # # 3. String repetition
 # print("Tendo Calvin SWE !" *3)
 
-# # 4. Useful methods
-# print("python".upper())
-# print("PYTHON".lower())
-# print(" hello ".strip())
-# print("apple,banana,orange".split(","))
+# # # 4. Useful methods
+# # print("python".upper())
+# # print("PYTHON".lower())
+# # print(" hello ".strip())
+# # print("apple,banana,orange".split(","))
 
-# # 5. String replacement
-# print("I like Java".replace("Java", "Python"))
+# # # 5. String replacement
+# # print("I like Java".replace("Java", "Python"))
 
-# # 6. Membership test
-# print("Py" in "Python", "java" not in "Python")
+# # # 6. Membership test
+# # print("Py" in "Python", "java" not in "Python")
 
-# # 7. f-strings
-# name, age = "Tendo calvin SWE", 23
-# print(f"My name is {name} and I am {age} years old")
-
-
-# Exercises
-# number one
-# Extract the first, middle, and last characters of a string.
-numerals = "Calvin"
-print(numerals[0], numerals[3], numerals[5])
+# # # 7. f-strings
+# # name, age = "Tendo calvin SWE", 23
+# # print(f"My name is {name} and I am {age} years old")
 
 
-# number two
-# Reverse a string using slicing.
-text = "Nathaniel"
-print(text[2:5])
+# # Exercises
+# # number one
+# # Extract the first, middle, and last characters of a string.
+# numerals = "Calvin"
+# print(numerals[0], numerals[3], numerals[5])
 
-# number three
-# Count how many times a word appears in a sentence.
-sentence = "I am the best Software Engineer in East Africa"
-print("Software" in sentence, "Tendo" in sentence)
-print(sentence.count("best"))
+
+# # number two
+# # Reverse a string using slicing.
+# text = "Nathaniel"
+# print(text[2:5])
+
+# # number three
+# # Count how many times a word appears in a sentence.
+# sentence = "I am the best Software Engineer in East Africa"
+# print("Software" in sentence, "Tendo" in sentence)
+# print(sentence.count("best"))
 
 # Write a program to check if a string is a palindrome.
+my_club = "Manchester United"
+if my_club.lower() == my_club[:: -1].lower():
+    print(f"{my_club} is a palindrome")
+    
+else:
+    print(f"{my_club} is not a palindrome")
 
 # Convert a string to uppercase, lowercase, and title case.
+capstone = "My name is Tendo Calvin and I am the best SWE"
+print(capstone.upper())
+print(capstone.lower())
+print(capstone.title())
 
 # Split a string of comma-separated values into a list.
 
+clubs = "united, chelsea, manchester united, manchester city," 
+print(clubs.split(','))
+
 # Use f-strings to format a multiplication table for a number.
+number = 5
+for i in range(1, 11):
+    print(f" {number} * {i} = {number * i}")
 
 # Replace all vowels in a string with *.
+sample = "Manchester United"
+vowels = "aeiouAEIOU"
+result = ''.join("*" if ch in vowels else ch for ch in sample)
+print(result)
