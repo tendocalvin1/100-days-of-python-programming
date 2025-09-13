@@ -69,8 +69,6 @@ print("Original:", word)
 print("Without vowels:", result)
 
 
-
-
 # Write a program to find common elements between two lists using sets.
 
 m = {1,2,3,4,5}
