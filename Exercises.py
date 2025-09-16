@@ -22,3 +22,27 @@ print(f"The sum of these two numbers is :", number_one + number_two)
 print(f"The difference of these two numbers is :", number_one - number_two)
 print(f"The product of these two numbers is :", number_one * number_two)
 print(f"Result from the division between these two numbers is :", number_one / number_two)
+
+
+# Data Types (int, float, str, bool) 
+
+# Check the data type of a user’s input and print whether it’s a string, int, or float.
+print(type ("Tendo calvin"))
+print(type (5))
+print(type (2.65))
+
+# Convert temperature from Celsius to Fahrenheit.
+celsius = 0
+Fahrenheit = (celsius * 1.8) + 32
+print(f"The temperatre in Fahrenheit is:", Fahrenheit)
+
+
+# Create a Boolean variable is_adult that is True if age ≥ 18, otherwise False.
+
+age1 = int(input("Enter your age please:"))
+
+if age1 >= 18:
+    print("You are an adult, you can now start living alone")
+    
+else:
+    print("You are still young to get married and have kids.")
