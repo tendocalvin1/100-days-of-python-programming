@@ -38,11 +38,63 @@ print(f"The temperatre in Fahrenheit is:", Fahrenheit)
 
 
 # Create a Boolean variable is_adult that is True if age ≥ 18, otherwise False.
+age = bool(input("How old are you ?"))
+is_adult = age >= 18
+print("Is adult:",is_adult) 
 
-age1 = int(input("Enter your age please:"))
+# is the person an adult
+age = 15
+is_adult = age >= 18
+print("Is Adult:", is_adult)
 
-if age1 >= 18:
-    print("You are an adult, you can now start living alone")
-    
-else:
-    print("You are still young to get married and have kids.")
+# Example 2: Is the user logged in?
+is_logged_in = False
+print("Is logged in:", is_logged_in)
+
+# Example 3: Has the student passed?
+
+pass_mark = 48
+passed = pass_mark >= 50
+print("Has passed:", pass_mark)
+
+
+# Example 4: Is it raining?
+is_raining = True
+print("Is rainig:", is_raining)
+
+
+# Operators & Expressions (Day 4)
+
+# Calculate the area and perimeter of a rectangle given length and width.
+
+# Write a program that checks if a number is even or odd.
+
+# Compute the compound interest given P, R, T.
+
+# Strings (Day 5)
+
+# Reverse a string input by the user.
+
+# Count how many vowels are in a string.
+
+# Take a sentence and print it in title case (each word capitalized).
+
+# Ask the user for their first and last name and print their initials (e.g., John Doe → JD).
+
+# Lists (Day 6)
+
+# Create a list of 5 numbers. Print the largest and smallest numbers without using max() and min().
+
+# Ask the user to input 5 names, store them in a list, and then print the list in reverse order.
+
+# Write a program that removes duplicates from a list.
+
+# Sum all elements in a list using a loop (without sum()).
+
+# Tuples & Sets (Day 7)
+
+# Create a tuple of 5 elements and print the 2nd and 4th elements.
+
+# Write a program that finds the union and intersection of two sets of numbers.
+
+# Check if a given element exists in a tuple or not.
