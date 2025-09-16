@@ -7,8 +7,11 @@ print(f"Hello, my name is {name} and I am {age} years old")
 
 # Swap the values of two variables (without using a third variable).
 # numbers 
-# ['a', 'b'] = [10, 15]
-# print('a', 'b')
+a = 10
+b = 15
+a, b = b, a
+
+print(a, b)
 
 # Take two numbers from the user and print their sum, difference, product, and quotient.
 

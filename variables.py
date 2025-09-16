@@ -1,34 +1,34 @@
-# variables in python
-# A variable is simply a name that stores a value in  memory
-# Think of variables like a box with a label
-# You can store different types of values("numbers, text, etc");
+# # variables in python
+# # A variable is simply a name that stores a value in  memory
+# # Think of variables like a box with a label
+# # You can store different types of values("numbers, text, etc");
 
 
-name = "Tendo"
-age = 23
-height = 1.65
+# # name = "Tendo"
+# # age = 23
+# # height = 1.65
 
 
-print("Name:", name)
-print("age:", age)
-print("height:", height)
+# # print("Name:", name)
+# # print("age:", age)
+# # print("height:", height)
 
 
-# input in python
-# The input() function allows  the user to type something from the keyboard
-#name = input("Enter your name please:")
-#print("My name is:", name)
+# # input in python
+# # The input() function allows  the user to type something from the keyboard
+# # name = input("Enter your name please:")
+# # print("My name is:", name)
 
-# By default, input is read as a string. If you want numbers, you must convert:
-#age = int(input("Enter your age please:")) # converts input to string
-#print("I shall be", age + 1, "years old next year.")
+# # By default, input is read as a string. If you want numbers, you must convert:
+# # age = int(input("Enter your age please:")) # converts input to string
+# # print("I shall be", age + 1, "years old next year.")
 
 
-# output in python
-# we use print for output in python
-#name = "Tendo Calvin SWE"
-#score = 90
-#print(f"Hello {name}, your score is {score}")
+# # output in python
+# # we use print for output in python
+# # name = "Tendo Calvin SWE"
+# # score = 90
+# # print(f"Hello {name}, your score is {score}")
 
 
 
@@ -73,21 +73,21 @@ print("height:", height)
 # else:
 #     print("This is an odd number")
 
-# Swapping Variables
-# Write a program that swaps the values of two variables. (e.g., a=5, b=10 → after swap → a=10, b=5)
+# # Swapping Variables
+# # Write a program that swaps the values of two variables. (e.g., a=5, b=10 → after swap → a=10, b=5)
 
-a = 5
-b = 10
-a, b = b, a  # swap values
-print("a =", a, "b =", b)
+# a = 5
+# b = 10
+# a, b = b, a  # swap values
+# print("a =", a, "b =", b)
 
-# Simple Interest Calculator
-# Ask for principal, rate, and time, then calculate Simple Interest using:
-# SI = (P × R × T) / 100
+# # Simple Interest Calculator
+# # Ask for principal, rate, and time, then calculate Simple Interest using:
+# # SI = (P × R × T) / 100
 
-pricipal = 500
-rate = 0.5
-time = 3
+# pricipal = 500
+# rate = 0.5
+# time = 3
 
-simple_interest = pricipal * rate * time
-print(f"The simple interest from this man's account is:", simple_interest)
+# simple_interest = pricipal * rate * time
+# print(f"The simple interest from this man's account is:", simple_interest)
