@@ -76,7 +76,7 @@ print(f"The perimeter of the rectangle is:", perimeter)
 
 # Write a program that checks if a number is even or odd.
 
-number = int(input("Enter any digit please:"))
+number = float(input("Enter any digit please:"))
 if number % 2 == 0:
     print("The number is even.")
     
@@ -133,8 +133,22 @@ print(first_name[0],second_name[0])
 # Lists (Day 6)
 
 # Create a list of 5 numbers. Print the largest and smallest numbers without using max() and min().
+numbers = [2,3,4,5,6]
+print(numbers[0])
+print(numbers[4])
 
 # Ask the user to input 5 names, store them in a list, and then print the list in reverse order.
+names = (input("Enter the names please:"))
+my_list = names.split(',')
+print(names.split(','))
+
+# clubs = "united, chelsea, manchester united, manchester city," 
+# print(clubs.split(','))
+
+
+
+
+
 
 # Write a program that removes duplicates from a list.
 
