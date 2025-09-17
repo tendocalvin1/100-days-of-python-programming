@@ -95,7 +95,28 @@ print(f"The compound interest for this estimation is:", compound_interest)
 
 # Reverse a string input by the user.
 
+name = "Manchester United"
+print(name[::-1])
+
+# looping through a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
 # Count how many vowels are in a string.
+
+
+word = "Manchester City"
+count = 0
+vowels = "a,e,i,o,u,A,E,I,O,U"
+
+for char in word:
+    if char in  vowels:
+        count += 1
+print(count) # total is supposed to be 4
+
+
 
 # Take a sentence and print it in title case (each word capitalized).
 
