@@ -120,7 +120,15 @@ print(count) # total is supposed to be 4
 
 # Take a sentence and print it in title case (each word capitalized).
 
+statement = "My name is Tendo Calvin and I am the best Software Engineer in the world."
+print(statement.title())
+
 # Ask the user for their first and last name and print their initials (e.g., John Doe → JD).
+first_name = str(input("What is your first name please ?"))
+second_name = str(input("What is your second name please ?"))
+
+print(first_name[0],second_name[0])
+
 
 # Lists (Day 6)
 
