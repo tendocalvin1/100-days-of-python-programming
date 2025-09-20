@@ -53,11 +53,14 @@ is_even(4)
 
 # Write a function factorial(n) that calculates the factorial of a number.
 def factorial(n):
-    numbers = [1,2,3,4,5]
-for number in numbers:
-    print("5*4*3*2*1")
+    result = 1
+    for i in range(1, n + 1):
+        result *=1
+    return result
     
 factorial(5)
+print(factorial(5))
+
     
 #     # looping through a list
 # fruits = ["apple", "banana", "cherry"]
@@ -66,10 +69,19 @@ factorial(5)
 
 # Write a function reverse_string(text) that returns the string reversed.
 
+def reverse_string(text):
+    return text[::-1]
 
+reverse_string("manchester united")
+print(reverse_string("manchester united"))
 
 # Write a function average(numbers) that takes a list of numbers and returns their average.
 
+def average(numbers):
+    if len(numbers) == 0:
+        return 0
+    return sum(numbers) / len(numbers)
 
+print(average([2,3,4,5,6,7,8]))
 
  
