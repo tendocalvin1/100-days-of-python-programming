@@ -117,4 +117,61 @@ def squared_list(numbers):
 print(squared_list([2, 4])) 
 
 
- 
+# exercises on functions
+
+# Simple Greeting: Write a function hello_user(name) that prints "Hello, <name>!".
+def hello_user(name):
+    print(f"hello,{name}!")
+    
+hello_user("Tendo")
+
+# Even or Odd: Write a function is_even(n) that returns True if n is even, otherwise False.
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    
+    else:
+        return False
+    
+print(is_even(15))
+print(is_even(20))
+print(is_even(25))
+
+# Sum of List: Write a function sum_list(numbers) that returns the sum of all numbers in a list.
+
+def sum_list(numbers):
+    return sum(numbers)
+    
+print(sum_list([2,3,4,5,6]))
+
+# Max of Three: Write a function max_of_three(a, b, c) that returns the largest of three numbers.
+
+def max_of_three(a, b, c):
+    return max(a, b, c)
+
+print(max_of_three(3,2,5))
+
+# Word Count: Write a function count_words(sentence) that counts how many words are in a sentence.
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+
+print(count_words("My name is Tendo Calvin and I am the best Software Engineer in the world."))
+
+# Prime Number Check: Write a function is_prime(n) that checks if a number is prime.
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+print(is_prime(11))
+
+# Temperature Converter: Write a function celsius_to_fahrenheit(c) that converts Celsius to Fahrenheit.
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+print(celsius_to_fahrenheit(0))
