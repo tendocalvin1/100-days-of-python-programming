@@ -84,4 +84,37 @@ def average(numbers):
 
 print(average([2,3,4,5,6,7,8]))
 
+
+# more examples of functions using the python
+
+# factorial with recursion
+def factorial_recursive(n):
+    if n == 0 or n == 1:
+        return 1
+    
+    else:
+        return n * factorial_recursive(n -1)
+    
+print(factorial_recursive(6))
+
+
+# function returning multiple values
+def min_max(numbers):
+    return min(numbers), max(numbers)
+
+low, high = min_max([3,6,9,12])
+
+print(low, high)
+
+# function taking a list and looping
+def squared_list(numbers):
+    squared = []
+    for n in numbers:
+        squared.append(n ** 2)
+    
+    return squared 
+
+print(squared_list([2, 4])) 
+
+
  
