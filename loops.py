@@ -39,4 +39,7 @@ while number < 1 or number > 10:
     number = int(input("Enter a # between 1 - 10")) 
 
 print(f"Your number is {number} and it is between 1 - 10")    
-    
+
+
+# for loop
+# a for loop 
