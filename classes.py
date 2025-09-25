@@ -84,7 +84,20 @@ print(student2.is_pass())  # False
 
 # 5. Exercises
 
-# Exercise 1: Create a class Rectangle with attributes length and width, and a method area that returns the area of the rectangle.
+# Exercise 1: Create a class Rectangle with attributes length and width, 
+# and a method area that returns the area of the rectangle.
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+        
+    def area(self):
+        return self.length * self.width
+
+
+my_area = Rectangle(3, 6)
+print(my_area.area())        
 
 # Exercise 2: Create a class BankAccount with:
 
@@ -92,27 +105,90 @@ print(student2.is_pass())  # False
 
 # Methods: deposit(amount), withdraw(amount)
 
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner = owner
+#         self.balance = balance
+        
+#     def deposit(amount):
+        
+        
+        
+#     def withdraw(amount):
+        
+        
+
 # Make sure withdraw does not allow balance to go negative.
 
 # Exercise 3: Create a class Book with:
-
 # Attributes: title, author, pages
-
 # Method: description() → prints “Title by Author, Pages pages”
 
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        
+    def description(self):
+        return f"{self.title} {self.author}  {self.pages}"
+    
+    
+my_book = Book("Dr Sports", "Don Robbie", 200)
+print(my_book.description())
+        
+
+
 # Exercise 4 (Challenge): Create a Circle class with:
-
 # Attribute: radius
-
 # Methods:
-
 # area()
-
 # circumference()
-
 # Hint: Use pi = 3.14159
 
-# Exercise 5 (Inheritance): Create a parent class Vehicle with method start(). Then create a child class Motorcycle that overrides the start() method to print “Motorcycle started.”
+
+class Circle:    
+    def __init__(self, radius):
+        self.radius = radius
+        
+        
+    def area(self):
+        return self.radius * self.radius * 3.14159
+    
+    def circumference(self):
+        return 2 * 3.14159 * self.radius
+    
+    
+my_circle = Circle(12)
+
+print(my_circle.area())
+print(my_circle.circumference())
+    
+    
+
+
+# Exercise 5 (Inheritance): Create a parent class Vehicle with method start(). 
+# Then create a child class Motorcycle that overrides 
+# the start() method to print “Motorcycle started.”
+
+
+class Vehicle:
+    def __init__(self,brand,name):
+        self.brand = brand
+        self.name = name
+        
+        
+        
+        
+class Motorcycle(Vehicle):
+    def start(self):
+        print("Motorcycle started.")
+        
+    
+motorcar = Motorcycle()
+   
+        
+
 
 
 
