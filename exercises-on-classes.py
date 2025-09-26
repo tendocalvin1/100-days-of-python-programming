@@ -92,10 +92,52 @@ for person in people:
 # 8. Write a method `birthday()` that increases age by 1.
 # 9. Create 5 different `Person` objects and store them in a list.
 # 10. Loop through the list and call `birthday()` for each.
+
 # 11. Write a `Rectangle` class with `length` and `width`.
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+        
+
+
 # 12. Add a method `area()` to compute area.
+
+    def area(self):
+        return (self.length * self.width)
 # 13. Add a method `perimeter()`.
+
+    def perimeter(self):
+        return (self.length + self.length + self.width + self.width)
+    
+    
 # 14. Create multiple rectangles and compare their areas.
+rectangle1 = Rectangle(9, 5)
+rectangle2 = Rectangle(15, 10)
+rectangle3 = Rectangle(8, 4)
+
+print(rectangle1.perimeter())
+print(rectangle1.area())
+
+print(rectangle2.perimeter())
+print(rectangle2.area())
+
+print(rectangle3.perimeter())
+print(rectangle3.area())
+
 # 15. Create a `Laptop` class with brand, RAM, and storage.
+class Laptop:
+    def __init__(self, brand, RAM, storage):
+        self.brand = brand
+        self.RAM = RAM
+        self.storage = storage
+        
+        
+    def specs(self):
+        print(self.brand, self.storage, self.RAM)
+        
+laptop1 = Laptop("Dell", 512, 16)
+print(laptop1.specs())
+
 # 16. Add a method `specs()` that prints all attributes.
 # 17. Instantiate a `Laptop` and call `specs()`.
