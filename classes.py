@@ -176,16 +176,16 @@ class Vehicle:
     def __init__(self,brand,name):
         self.brand = brand
         self.name = name
-        
-        
-        
-        
+              
 class Motorcycle(Vehicle):
     def start(self):
         print("Motorcycle started.")
         
     
-motorcar = Motorcycle()
+motorcar = Motorcycle("Mercedes-Benz", "GLE")
+print(motorcar.start())
+# print(motorcar.brand())
+# print(motorcar.name())
    
         
 
