@@ -184,8 +184,10 @@ class Motorcycle(Vehicle):
     
 motorcar = Motorcycle("Mercedes-Benz", "GLE")
 print(motorcar.start())
-# print(motorcar.brand())
-# print(motorcar.name())
+
+# Access attributes directly
+print("Brand:", motorcar.brand)
+print("Name:", motorcar.name)
    
         
 
