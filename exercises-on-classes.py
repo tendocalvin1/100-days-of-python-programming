@@ -66,6 +66,29 @@ Book3.summary()
 
 # 6. Add a method `summary()` to `Book` that prints title and author.
 # 7. Create a `Person` class with attributes `name` and `age`.
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    
+    def birthday(self):
+        self.age += 1
+        
+
+
+person1 = Person("Tendo Calvin", 23)
+person2 = Person("Kobbie Maino", 20)
+person3 = Person("Daniel David", 24)
+person4 = Person("Teddy Venabols", 44)
+person5 = Person("Lionel Messi", 38) 
+
+people = [person1, person2, person3, person4, person5] 
+
+for person in people:
+    (person.birthday())
+    print(person.name, person.age)
+    
 # 8. Write a method `birthday()` that increases age by 1.
 # 9. Create 5 different `Person` objects and store them in a list.
 # 10. Loop through the list and call `birthday()` for each.
