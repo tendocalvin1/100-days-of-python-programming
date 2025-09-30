@@ -62,4 +62,44 @@ print(student1.name)
 print(student1.age)    
 print(Student.class_year)
 print(Student.num_students) 
-print(f"My graduating class of {Student.class_year} has {Student.num_students} students")  
+print(f"My graduating class of {Student.class_year} has {Student.num_students} students")
+
+
+
+
+
+# inheritance in OOP
+# Inheritance = Allows a class to inherit attributes and methods from another class
+#               Helps with code reusability and extensibility
+#               class Child(parent)
+
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+        self.is_alive = True
+        
+        
+    def eat(self):
+        print(f"{self.name} is eating")
+        
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+        
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+
+class Mouse(Animal):
+    pass
+
+dog = Dog("Max")
+cat = Cat("Marlon")
+mouse = Mouse("Maya")
+
+
+print(dog.name)
+print(cat.name)
+print(mouse.name)
