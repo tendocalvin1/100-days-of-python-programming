@@ -6,6 +6,43 @@
 # Focus: parent-child relationships, overriding, polymorphism.
 
 # 1. Create an `Animal` base class with a method `speak()`.
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+        
+    def speak(self):
+        print(f"{self.name} is speaking and making a sound")
+        
+class Dog(Animal):
+    
+    def speak(self):
+        print(f"{self.name} is barking")
+        
+
+class Cat(Animal):
+    
+    def speak(self):
+        print(f"{self.name} is meowing")       
+
+# dog = Dog("Max")
+# cat = Cat("Rona")
+
+# dog.speak()
+# cat.speak()
+
+class Bird(Animal):
+    
+    def speak(self):
+        print(f"{self.name} is hissing.")
+        
+#bird = Bird("Ostrich")
+# bird.speak()
+
+animals = [Cat("Max"), Dog("Rona"), Bird("Ostrich")]
+
+for animal in animals:
+    print(f"{self.name} speaks")
 # 2. Make subclasses `Dog` and `Cat` that override `speak()`.
 # 3. Add another subclass `Bird` with its own `speak()`.
 # 4. Store all animals in a list and loop to call `speak()`.
