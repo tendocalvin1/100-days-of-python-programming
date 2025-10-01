@@ -87,10 +87,12 @@ class Animal:
         print(f"{self.name} is sleeping")
         
 class Dog(Animal):
-    pass
+    def speak(self):
+        print(f"{self.name} woofs")
 
 class Cat(Animal):
-    pass
+    def speak(self):
+        print(f"{self.name} meows")
 
 class Mouse(Animal):
     pass
@@ -103,3 +105,54 @@ mouse = Mouse("Maya")
 print(dog.name)
 print(cat.name)
 print(mouse.name)
+
+dog.sleep()
+dog.eat()
+dog.speak()
+cat.speak()
+print(dog.is_alive)
+
+
+# multiple inheritance = inherit from more than one parent class
+#                       C(A, B)
+
+# multilevel inheritance = inherit from a parent which inherits from another parent
+#                          C(B) <- B(A) <- A
+
+class Mammal:
+    def __init__(self, name):
+        self.name = name
+    def eat(self):
+        print(f"{self.name} is eating")
+        
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+class Prey(Mammal):
+    def flee(self):
+        print(f"{self.name} is fleeing")
+
+class Predator(Mammal):
+    def hunt(self):
+        print(f"{self.name} is hunting")
+
+class Rabbit(Prey):
+    pass
+
+class Hawk(Predator):
+    pass
+
+class Fish(Prey, Predator):
+    pass
+
+
+rabbit = Rabbit("Ty")
+hawk = Hawk("Ronnie")
+fish = Fish("Tilapia")
+
+
+fish.hunt()
+fish.flee()
+rabbit.flee()
+hawk.hunt()
+rabbit.sleep()
+rabbit.eat()
