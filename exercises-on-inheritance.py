@@ -37,12 +37,12 @@ class Bird(Animal):
         print(f"{self.name} is hissing.")
         
 #bird = Bird("Ostrich")
-# bird.speak()
+#bird.speak()
 
 animals = [Cat("Max"), Dog("Rona"), Bird("Ostrich")]
 
 for animal in animals:
-    print(f"{self.name} speaks")
+    print(f"{animal.speak()} speaks")
 # 2. Make subclasses `Dog` and `Cat` that override `speak()`.
 # 3. Add another subclass `Bird` with its own `speak()`.
 # 4. Store all animals in a list and loop to call `speak()`.
