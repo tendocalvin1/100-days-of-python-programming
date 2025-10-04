@@ -60,6 +60,30 @@ house = House("Flat")
 house.show_rooms()
 
 # Create a Book class that has a TitlePage and a list of Chapter objects.
+class TitlePage:
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
+        
+class List:
+    def __init__(self,is_availbale):
+        self.is_available = True
+        
+        
+class Book:
+    def __init__(self, author, title, is_available):
+        self.title_page = TitlePage(author, title)
+        self.list = List(is_available)
+        
+        
+    def description(self):
+        return f"{self.title_page.author} {self.title_page.title} {self.list.is_available}"
+    
+
+book1 = Book("Steve Bartlett", "Elon Musk", True)
+print(book1.description())
+    
+
 
 # Create a LibraryCard class that is composed into a LibraryMember class.
 
