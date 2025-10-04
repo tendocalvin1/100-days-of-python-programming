@@ -40,22 +40,24 @@ print(computer1.specs())
         
 
 # Create a House class that has multiple Room objects.
-
-class House:
-    def __init__(self, name, year, age):
+class Room:
+    def __init__(self, name, area):
         self.name = name
-        self.year = year
-        self.age = age
+        self.area = area # in square metres
         
-
-house1 = House("Bungalow", 2022, 3)
-house2 = House("Flat", 2020, 5)
-house3 = House("Mansion", 2019, 6)
-
-
-print(house2.name)
-print(house2.year)
-print(house2.age)
+class House:
+    def __init__(self, house_name):
+        self.house_name = house_name
+        self.rooms = [Room("living_room", 30), Room("sitting_room", 45), Room("bedroom", 35)]
+        
+    
+    def show_rooms(self):
+        print(f"{self.house_name} has these rooms:")
+        for room in self.rooms:
+            print(f"- {room.name} ({room.area}m²)")
+            
+house = House("Flat")
+house.show_rooms()
 
 # Create a Book class that has a TitlePage and a list of Chapter objects.
 
